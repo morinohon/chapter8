@@ -30,9 +30,11 @@ public class Main {
         System.out.println("現在の武器は" + h.sword.name);
 
         Hero h1 = new Hero("ミナト");
+        System.out.println(h.hp);
+        System.out.println(h.name);
         //h1.name = "ミナト";
         //h1.hp = 100;
-        Hero h2 = new Hero("アサカ");
+        //Hero h2 = new Hero("アサカ");
         //h2.name = "アサカ";
         //h2.hp = 100;
         Wizard w =  new Wizard("スガワラ");
