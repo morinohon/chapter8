@@ -2,7 +2,7 @@
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
-        Hero h = new Hero("ミナト");
+        /*Hero h = new Hero("ミナト");
         //h.name = "ミナト";
         h.hp = 100;
         System.out.println("勇者" + h.name + "を生み出しました！");
@@ -43,6 +43,19 @@ public class Main {
         w.hp = 50;
         w.heal(h1);
         w.heal(h2);
-        w.heal(h2);
+        w.heal(h2);*/
+
+        // 引数なし
+        Hero h = new Hero();//同じ名前
+        System.out.println(h.name + "のHPは" + h.hp + "です");
+        // 引数あり String
+        Hero h1 = new Hero("ミナト");//同じ名前
+        System.out.println(h1.name + "のHPは" + h1.hp + "です");
+        // 引数あり int
+        Hero h2 = new Hero(999);//同じ名前
+        System.out.println(h2.name + "のHPは" + h2.hp + "です");
+        // 引数2つ
+        Hero h3 = new Hero(999, "ミナト");//同じ名前
+        System.out.println(h3.name + "のHPは" + h3.hp + "です");
     }
 }
